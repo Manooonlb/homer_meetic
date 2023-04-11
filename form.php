@@ -55,7 +55,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') { // verification de la méthode utili
 <?php
 // si pas d'erreur, et si le chemin du fichier est bien defini plus haut, affichage du message avec la photo uploadée. 
     if (isset($filePath)){ ?>
-        <p> Bonjour <?= $_POST['firstname'] .' ' . $_POST ['lastname'] . ','?>bienvenue sur meetic pour Springfield ! Nous esperons que vous trouverez l'âme soeur rapidement ! Vous avez <?= $_POST['age'] . 'ans'?>. Nous allons donc vous faire rencontrer des personnes dans votre tranche d'âge. Voici votre avatar : <img src= "<?=$filePath ?>" alt = "votre avatar"/>.
+        <p> Bonjour <?= $_POST['firstname'] .' ' . $_POST ['lastname'] . ', '?>bienvenue sur meetic pour Springfield! <br> Nous esperons que vous trouverez l'âme soeur rapidement! <br> Vous avez <?= $_POST['age'] . 'ans'?>. Nous allons donc vous faire rencontrer des personnes dans votre tranche d'âge.<br>
+        Voici votre avatar : <br> <img src= "<?=$filePath ?>" alt = "votre avatar"/>.
 
     <?php } ?>
 
